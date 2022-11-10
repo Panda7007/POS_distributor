@@ -24,7 +24,7 @@
                     <div class="col-md-4">
                         <label for="product">Produk <span class="text-danger">*</span></label>
                     </div>
-                    <div class="col-md-8 form-group">
+                    <div class="col-md-8 form-group ">
                         <select name="product" id="product" class="form-select">
                             <option value="" disabled hidden selected>Pilih Produk</option>
                             @foreach ($products as $product)
@@ -314,7 +314,7 @@
                 } else if (transaksi.kekurangan >= 0 && transaksi.reseller_id && kembalian.getAttribute(
                         "kembalian") == 0) {
                     if (confirm(
-                            "Uang yang diayarkan pelanggan tidak cukup, apakah anda yakin ingin melanjutkan transaksi?")) {
+                            "Uang yang dibayarkan pelanggan tidak cukup, apakah anda yakin ingin melanjutkan transaksi?")) {
                         Submit();
                     }
                 } else {
